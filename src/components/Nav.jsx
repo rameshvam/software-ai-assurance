@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Menu, X, ArrowUpRight } from 'lucide-react';
 import Logo from './Logo.jsx';
 import { useContact } from './ContactModal.jsx';
+import VersionSwitch from './VersionSwitch.jsx';
 import { BASE, offerings } from '../data/content.js';
 
 const LINKS = ['Solutions', 'Capabilities', 'About Us', 'Insights', 'Careers'];
@@ -73,6 +74,7 @@ export default function Nav() {
         </nav>
 
         <div className="nav__cta">
+          <VersionSwitch />
           <button className="btn btn--primary btn--sm" onClick={() => open()}>Contact Us</button>
           <button className="nav__burger" aria-label={mobile ? 'Close menu' : 'Open menu'} onClick={() => setMobile((m) => !m)}>
             {mobile ? <X size={22} /> : <Menu size={22} />}

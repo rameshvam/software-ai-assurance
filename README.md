@@ -25,6 +25,19 @@ npm start          # Express serves dist/ and the API on http://localhost:8787
 | `/capabilities/software-and-ai-assurance/assurance-coe` | Offering 02 sub-page |
 | `/capabilities/software-and-ai-assurance/ai-agentic-systems-assurance` | Offering 03 sub-page |
 
+## Two design versions
+
+A **Version A / Version B** switch in the top nav keeps the visitor on the same page.
+
+- **Version A** (`/capabilities/software-and-ai-assurance/…`): dark, motion-led (canvas hero, AI lab).
+- **Version B** (`/v2/capabilities/software-and-ai-assurance/…`): "The Assurance Atlas". It's built on the
+  fire-insurance-map tradition: an interactive estate plan with a survey route, offerings as colour bands,
+  documentary photography, tables for data and an inline contact form. It's made with
+  [Impeccable](https://github.com/pbakaus/impeccable)'s guidance. Its detector finds 2 advisory items across all
+  Version B pages, against 34 on Version A's main page.
+  Code lives in `src/v2/`, images in `public/v2/` (FEMA, NOAA and Sanborn/Library of Congress: public domain;
+  NERSC photo: CC0). Credits are listed in the Version B footer.
+
 ## API
 
 - `GET /api/health` — health check
